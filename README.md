@@ -22,54 +22,8 @@ Frequency Division Demultiplexing: for each frequency, multiply the multiplexed 
 Plot original signals, multiplexed signal, and demultiplexed signals for verification.
 
 ### PROGRAM
-clc;
-clear; 
-close;
-fs=80000; 
-N=floor(0.05*fs); 
-t=(0:N-1)/fs;
-fm=[564,574,584,594,604,614];
-fc=[5640,5740,5840,5940,6040,6140];
-Am=[6.7,6.8,6.9,7.0,7.1,7.2];
-Ac=[13.4,13.6,13.8,14.0,14.2,14.4];
-num=length(fm);
-for i=1:num
-    m(i,:)=Am(i)*sin(2*%pi*fm(i)*t);
-end
-fdm=zeros(1,N);
-for i=1:num
-    fdm = fdm + Ac(i)*cos(2*%pi*fc(i)*t).*m(i,:);
-end
-function h=FIR(fc1,fc2,fs,M,mode)
-    n=-M:M; L=length(n);
-    x1=2*fc1*n/fs; x2=2*fc2*n/fs;
-    s1=ones(1,L); s2=ones(1,L);
-    for k=1:L
-        if x1(k)<>0 then s1(k)=sin(%pi*x1(k))/(%pi*x1(k)); end
-        if x2(k)<>0 then s2(k)=sin(%pi*x2(k))/(%pi*x2(k)); end
-    end
-    lp1=(2*fc1/fs)*s1; lp2=(2*fc2/fs)*s2;
-    w=(0.54-0.46*cos(2*%pi*(n+M)/(2*M)));
-    if mode==1 then h=lp1.*w;
-    else h=(lp2-lp1).*w; end
-    h=h/sum(h);
-endfunction
-M=300;
-for i=1:num
-    bp=FIR(fc(i)-600,fc(i)+600,fs,M,2);
-    iso=conv(fdm,bp,"same");
-    mix=iso.*cos(2*%pi*fc(i)*t);
-    lp=FIR(800,0,fs,M,1);
-    demod(i,:)= (2/Ac(i))*conv(mix,lp,"same");
-end
-scf(1); 
-clf;
-for i=1:num subplot(num,1,i); plot(t,m(i,:)); end
-scf(2); 
-clf; 
-plot(t,fdm);
-scf(3); clf;
-for i=1:num subplot(num,1,i); plot(t,demod(i,:)); end
+
+<img width="650" height="963" alt="Screenshot 2025-11-28 222226" src="https://github.com/user-attachments/assets/0220b3e6-2914-49c9-9aed-492c79b106fe" />
 
 
 ### GRAPH:
