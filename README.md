@@ -74,15 +74,15 @@ end
 
 ### GRAPH:
 
-<img width="1915" height="901" alt="image" src="https://github.com/user-attachments/assets/2d1568ef-ed4a-4499-828f-d4928e1800a7" />
-<img width="1648" height="804" alt="image" src="https://github.com/user-attachments/assets/7c8ea91b-075f-48fa-a5f4-1a206c26613b" />
-<img width="1919" height="909" alt="image" src="https://github.com/user-attachments/assets/38da7fb9-924a-42eb-a5c6-2555e11b7aa5" />
+<img width="1834" height="1019" alt="image" src="https://github.com/user-attachments/assets/5589c46a-59c2-42ed-81ed-f82303f26da8" />
+<img width="1793" height="1003" alt="image" src="https://github.com/user-attachments/assets/cfa58e97-d548-4439-9dea-2a5b75cfe560" />
+<img width="1564" height="902" alt="image" src="https://github.com/user-attachments/assets/21cc0e9d-04f4-4410-9fb7-2660c5d9554b" />
 
 
 ### TABULATION:
 
-![WhatsApp Image 2025-11-18 at 23 57 16_6ac820dc](https://github.com/user-attachments/assets/869c38fb-a6f6-4225-904c-cf123ee68828)
-![WhatsApp Image 2025-11-18 at 23 57 16_715527a6](https://github.com/user-attachments/assets/71b5eef4-5335-4d55-8aa3-8c4a821d94ec)
+![WhatsApp Image 2025-11-28 at 16 34 39_9b9c1784](https://github.com/user-attachments/assets/c39e93b0-4bf7-4887-ad87-da1fbf0ade71)
+![WhatsApp Image 2025-11-28 at 16 34 35_f9e1c093](https://github.com/user-attachments/assets/2090c228-1c5c-4d38-968d-f262293a4025)
 
 ### RESULTS:
 
